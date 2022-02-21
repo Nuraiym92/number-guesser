@@ -52,6 +52,11 @@ let a=numAttempt.toString();
 attempt.textContent=a;
 
 }
+if (attempt.textContent==0){
+    setMessage(`Извините у вас не осталось попыток`,"red")
+    btn.textContent="Новая игра"
+    btn.addEventListener("click",newGame)
+}
 
 });
 
